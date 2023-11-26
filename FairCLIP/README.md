@@ -19,7 +19,7 @@ FairVLMed
 ```
 The file split_files.csv details the division of data into training, validation, and testing sets. The data folder contains 10,000 NPZ files named in the format "data_xxxxxx.npz", where "xxxxxx" (e.g., 006691) is a unique numeric ID. The file meta_all.csv provides metadata (such as race, gender, ethnicity, marital status, age, and preferred language) for each NPZ file. Additionally, the files gpt4_summarized_notes.csv, med42_summarize.csv, and pmc-llama_summarize.csv contain notes summarized by GPT-4, Med42, and PMC-LLAMA, respectively.
 
-Each NPZ file have the following fields.
+Each NPZ file has the following fields.
 ```
 fundus_slo: slo fundus image
 md: visual field mean deviation
