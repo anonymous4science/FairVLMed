@@ -19,7 +19,20 @@ FairVLMed
 ```
 The file split_files.csv details the division of data into training, validation, and testing sets. The data folder contains 10,000 NPZ files named in the format "data_xxxxxx.npz", where "xxxxxx" (e.g., 006691) is a unique numeric ID. The file meta_all.csv provides metadata (such as race, gender, ethnicity, marital status, age, and preferred language) for each NPZ file. Additionally, the files gpt4_summarized_notes.csv, med42_summarize.csv, and pmc-llama_summarize.csv contain notes summarized by GPT-4, Med42, and PMC-LLAMA, respectively.
 
-Each NPZ file includes keys for 'fundus_slo', 'md', 'tds', 'note', 'note_ext', 'age', 'gender', 'race', 'ethnicity', 'language', 'maritalstatus', and 'glaucoma'.
+Each NPZ file have the following fields.
+```
+fundus_slo: slo fundus image
+md: visual field mean deviation
+tds: 52 visual field total deviation values
+age: patient age
+gender: Female (0), Male (1)
+race: Asian (0), Black (1), White (2)
+ethnicity: non-Hispanic (0), Hispanic (1), Unknown (-1)
+language: English (0), Spanish (1), Other (2), Unknown (-1)
+maritalstatus: Marriage or Partnered (0), Single (1), Divorced (2), Widoled (3), Legally Separated (4), Unknown (-1)
+glaucoma: Non-Glaucoma (0) or Glaucoma (1)
+note: the original de-identified clinical note
+```
 
 
 # Abstract
